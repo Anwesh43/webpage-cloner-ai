@@ -3,5 +3,4 @@ import asyncio
 import sys 
 
 if __name__ == "__main__" and len(sys.argv) > 1:
-    createWebpageAsync(sys.argv[1:])
-    
+    asyncio.run(createWebpageAsync(sys.argv[1:]))
